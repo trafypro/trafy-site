@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- *******  Link To CSS Style Sheet  ******* -->
+	<link rel="stylesheet" type="text/css" href="ContactSection.css">
+
+	<!-- *******  Font Awesome Icons Link  ******* -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+
+	<!-- *******  Link To Goggle Fonts  *******  -->
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato&family=Noto+Sans:wght@500&family=Poppins&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact Section</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">
+          <img class="logo" src="Group 1.png" alt="logo" />
+        </a>
+        <div class="sample">
+          <button class="menu-icon" style="background-color: inherit;" onclick="toggleMenu()">
+            <span class="icon">&#9776;</span>
+            </button>
+            <nav class="navbar" id="navbar">
+            <div class="buttons">
+              <button  data-href="index.html#Website" type="button" class="solution" onclick="scrollToSection('index.html#Website')">
+               Solutions </button>
+                <!-- <img class="dropdown-icon" src="arrow-down-sign-to-navigate.png" alt="down" width="8px" height="8px" > -->
+              <button data-href="index.html#Markerting" class="Academy" onclick="scrollToMarketing('index.html#Markerting')">Marketing</button>
+              <button data-href="index.html#Academy" class="Resources" onclick="scrollToAcademy('index.html#Academy')">Academy</button>
+             
+            </div>
+            <div class="logsign">
+              
+              <button class="common-button-white" onclick="redirectToContact()"> Get Free consultation </button>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <div class="solution-container" id="solution-container">
+        <div class="solution-list" id="solution-list">
+          <div class="solution-button">
+            <button type="button" class="back"  onclick="solutionList()">
+              <div >&lt; back</div>
+            </button>
+          </div>
+          <div class="solution-item">
+            
+            <ul class="list">
+              <li class="list-title">Website</li>
+              <li>Starter</li>
+              <li>Premium</li>
+              <li>Advance</li>
+            </ul>
+          </div>
+          <div class="solution-item">
+            
+            <ul>
+              <li class="list-title">Apps</li>
+              <li>Premium-Android</li>
+              <li>Premium-Android +Ios</li>
+            </ul>
+          </div>
+          <div class="solution-item">
+           
+            <ul>
+              <li class="list-title">Digital Marketing</li>
+              <li>SEO</li>
+              <li>Lead generation</li>
+              <li>Email Marketing</li>
+              <li>Content Marketing</li>
+              <li>Social Media Marketing</li>
+            </ul>
+          </div>
+          <div class="solution-item">
+            
+            <ul>
+              <li class="list-title">Branding</li>
+              <li>Logo</li>
+              <li>Media Kit</li>
+              <li>Package Design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+  
+	<div class="container">
+		<main class="row">
+			
+
+			<section class="col left">
+					
+				<div class="contactTitle">
+					<h2>Get In Touch</h2>
+					<p>Serving you is our highest priority. Our team responds to every message as quick as possible. </p>
+				</div>
+
+				<div class="contactInfo">
+					
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-phone"></i>
+						</div>
+						<div class="details">
+							<span>Phone</span>
+							<span>+91 9384479487</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-envelope"></i>
+						</div>
+						<div class="details">
+							<span>Email</span>
+							<span>info@trafypro.com</span>
+						</div>
+					</div>
+
+					<div class="iconGroup">
+						<div class="icon">
+							<i class="fa-solid fa-location-dot"></i>
+						</div>
+						<div class="details">
+							<span>Location</span>
+							<span>30/1,Thirumalai Nagar, Udayampalayam, Chinnavedampatti Post, Coimbatore, Tamil Nadu - 641049.</span>
+						</div>
+					</div>
+
+				</div>
+
+
+				<!-- <div class="socialMedia">
+			<a href=""><img src="linkedin (2).png" alt=""></a>
+			<a href=""><img src="facebook.png" alt=""></a>
+			<a href=""><img src="instagram (2).png" alt=""></a>
+			<a href=""><img src="twitter (1).png" alt=""></a>
+			<a href=""><img src="dribble-big-logo.png" alt=""></a>
+			<a href=""><img src="behance.png" alt=""></a>
+				</div> -->
+
+
+			</section>
+
+
+			<section class="col right">
+
+				<form class="messageForm" id="messageForm"  method="post">
+					
+					<div class="inputGroup halfWidth">
+						<input type="text" name="name" required="required" placeholder="Name">
+					</div>
+
+					<div class="inputGroup halfWidth">
+						<input type="email" name="email" required="required" placeholder="Email">
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<!-- <label for="subject">Subject</label> -->
+						<select id="subject" name="subject" required="required">
+							<option value="" disabled selected>Select a Services</option>
+							<option value="Markerting">Markerting</option>
+							<option value="Web Development">Web Development</option>
+							<option value="App Development">App Development</option>
+							<option value="Course">Academy</option>
+							<!-- <option value="Feedback">Feedback</option> -->
+							<!-- Add more options as needed -->
+						</select>
+					</div>
+					<div class="inputGroup fullWidth">
+						<textarea required="required" name="YourMessage"  placeholder="Your Message"></textarea>
+					</div>
+
+					<div class="inputGroup fullWidth">
+						<button> Submit</button>
+					</div>
+
+				</form>
+
+			</section>
+
+
+		</main>
+	</div>
+
+	<section class="footer">
+        
+       
+		<div class="footer-heading">
+		<div class="socials">
+		 <a href="https://www.linkedin.com/company/trafypro/"><img src="linkedin (2).png" alt=""></a>
+          <a href="https://www.facebook.com/trafyproint"><img src="facebook.png" alt=""></a>
+          <a href="https://www.instagram.com/trafypro/"><img src="instagram (2).png" alt=""></a>
+          <a href="https://twitter.com/trafyproint"><img src="twitter (1).png" alt=""></a>
+          <a href="https://dribbble.com/Dmerztech"><img src="dribble-big-logo.png" alt=""></a>
+          <a href="https://www.behance.net/dmerztech"><img src="behance.png" alt=""></a>	
+		</div>
+  
+			
+		<div class="policies">
+		  <li><a href="">Terms of Service</a></li>
+		  <li><a href="">Privacy Policy</a></li>
+		  <li><a href="">Cookie Policy</a></li>
+		</div>
+  
+		<div class="copyrights">
+		  <div class="footer-logo"><img src="Group 1.png" alt=""></div>
+		  <div class="copyright-text">Copyright © 2023 trafy.</div>
+		 </div>
+		 </div>
+	  </section>
+	  <script>
+		const form = document.getElementById("messageForm");
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
+    const formdata = new FormData(form);
+    const data = {
+        name: formdata.get("name"),
+        email: formdata.get("email"),
+        subject: formdata.get("subject"),
+        message: formdata.get("YourMessage")
+    };
+
+    const response = await fetch("http://localhost:3003/message", {
+        method: "post",
+        body: JSON.stringify(data),
+        headers: { "content-type": "application/json" }
+    });
+
+    if (!response.ok) {
+        console.log(response);
+        return;
+    }
+
+    // Reset the form after successful submission
+    form.reset();
+    alert("Success");
+});
+
+		 </script>
+	  
+	  <script src="contactSection.js"> </script>
+
+</body>
+</html>
